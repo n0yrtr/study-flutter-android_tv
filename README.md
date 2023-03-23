@@ -1,11 +1,15 @@
 # study-flutter-android_tv
-
 flutter でAndroid tv アプリを作るための事前調査リポジトリ
 
+## 環境
+`flutter --version`                                                                                                                                                                  8.6m  木  3/23 11:27:48 2023
+Flutter 3.7.8 • channel unknown • unknown source
+Framework • revision 90c64ed42b (34 hours ago) • 2023-03-21 11:27:08 -0500
+Engine • revision 9aa7816315
+Tools • Dart 2.19.5 • DevTools 2.20.1
 
-
-## 初期構築
-brew の方法と、公式サイトからinstallとあるが、  
+## flutter環境構築
+homebrew の方法と、公式サイトからinstallとあるが、  
 昔構築した名残で、  
 
 https://github.com/flutter/flutter
@@ -111,7 +115,7 @@ OKKKKKKK！！！！
 
 
 ##### [おまけ]やっぱり3.7.8のままやってみる
-結局キャッシュの問題だっただけで、flutter upgradeたたけなくても良いなら、いけるのでは？
+結局キャッシュの問題で、flutter upgradeたたけなくても良いなら、いけるのでは？
 
 `git checkout 3.7.8`
 
@@ -134,5 +138,35 @@ flutter upgrade が出来ていないとバージョンが実は更新されて�
 本当に問題ないかは知らない。
 
 
-
 ### プロジェクト作成
+#### vscode
+なんでも出来るけど、
+vs_codeでコードいじっている人が最近は多いのかな？
+
+ってことで、vs_codeで作成する。
+
+plugin をinstall
+![](https://i.imgur.com/D1ANH0o.png)
+![](https://i.imgur.com/cEOEanc.png)
+
+##### organization設定
+Code > Preferences > Settings
+![](https://i.imgur.com/tu1fqRh.png)
+
+以下で検索
+`flutter create organization`
+
+![](https://i.imgur.com/iIU2XEM.png)
+![](https://i.imgur.com/P2W9Na9.png)
+
+`"dart.flutterCreateOrganization": null`
+↓
+`"dart.flutterCreateOrganization": "n0yrtr"`
+
+##### project作成
+Command+Shift+P
+![](https://i.imgur.com/5EgjVwy.png)
+![](https://i.imgur.com/y01w6Gi.png)
+![](https://i.imgur.com/I4pkRBt.png)
+
+最後にアプリケーション名を決めるとOK！
